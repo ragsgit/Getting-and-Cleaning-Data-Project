@@ -232,6 +232,6 @@ The following are the transformations applied to the source data:
 	- The initial `f` and `t` were expanded to `FrequencyDomain` and `TimeDomain` respectively.
 	- `Acc`, `Gyro`, `Mag`, `Freq`, `mean`, and `std` were replaced with `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean`, and `StandardDeviation` respectively.
 	- Replaced `BodyBody` with `Body`.
-1. From the data set in step 4, created the final data set with the average of each variable for each activity and each subject. This final set was written to tidy_data.txt file.
+1. From the data set in step 4, created the final data set with the average of each variable for each activity and each subject. This final set was written to `tidy_data.txt` file.
 
 Please review the `README.md` file in this repo for additional info.
