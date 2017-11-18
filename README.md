@@ -5,16 +5,14 @@ Nov. 2017, Rag.R
 #Description of the project, data cleaning, and output
 Repository for final project of Coursera Getting and Cleaning Data course. (Nov 2017)
 
-#What is the project about:
+## What is the project about:
 
 (content from: course site)
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
-
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Here are the data for the project:
-
+Source data for the project (downloaded by the R script):
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The R file in this repo, `run_analysis.R`, does the following:
@@ -33,9 +31,7 @@ This repo contains the following:
 - `CodeBook.md` - required CodeBook describing the data and transformation.
 
 
-
 For info on the study and the source data, please review:
-
 [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
 
 
