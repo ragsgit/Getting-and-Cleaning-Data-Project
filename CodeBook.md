@@ -1,5 +1,5 @@
 # Code book for Coursera *Getting and Cleaning Data* course project
-# November, 2017
+November, 2017 - by Rag R
 
 This code book (`CoodBook.md`) is for the data in tidy_data.txt available in this repo. The data file was created by running `run_analysis.R`.
 
@@ -224,14 +224,14 @@ The zip file containing the source data is located at [https://d396qusza40orc.cl
 Source data loading, and transformations were done by the R Program in `run_analysis.R` file in this repo.
 The following are the transformations applied to the source data:
 
-1. The training and test sets were merged to create one data set.
-1. The measurements on the mean and standard deviation (i.e. signals containing the strings `mean` and `std`) were extracted for each measurement, and the others were discarded.
-1. The activity identifiers (originally coded as integers between 1 and 6) were replaced with descriptive activity names (see [Identifiers](#identifiers) section).
+1. Joined data from the Training and Test data.
+1. Discarded all but the measurements on the mean and standard deviation (`mean` and `std`).
+1. The activity identifiers were labelled with descriptive activity names (see [Identifiers](#identifiers) section). They were originally coded as as integers between 1 and 6.
 1. The variable names were replaced with descriptive variable names (e.g. `tBodyAcc-mean()-X` was expanded to `TimeDomainBodyAccelerometerMeanX`), using the following set of rules:
 	- Special characters (i.e. `(`, `)`, and `-`) were removed
 	- The initial `f` and `t` were expanded to `FrequencyDomain` and `TimeDomain` respectively.
 	- `Acc`, `Gyro`, `Mag`, `Freq`, `mean`, and `std` were replaced with `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean`, and `StandardDeviation` respectively.
-	- Replaced (supposedly incorrect as per source's `features_info.txt` file) `BodyBody` with `Body`.
-1. From the data set in step 4, the final data set was created with the average of each variable for each activity and each subject.
+	- Replaced `BodyBody` with `Body`.
+1. From the data set in step 4, created the final data set with the average of each variable for each activity and each subject. This final set was written to tidy_data.txt file.
 
 Please review the `README.md` file in this repo for additional info.
